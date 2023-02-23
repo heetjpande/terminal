@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.cdnfonts.com/css/binary');
+
+:root {
+    --dark: #282c35;
+    --dim: #878681;
+    --pink: #ff00da;
+    --cherryRed: #ae515b;
+    --popGreen: #529f7b;
+    --darkPink: #9d667b;
+    --lighter-gray-color: #2f333c;
+    --light-gray-color: #3b3e46;
+}
+
+/* font-family: 'Binary 01s BRK', sans-serif;
+font-family: 'Binary BRK', sans-serif;
+font-family: 'Binary X BRK', sans-serif;
+font-family: 'Binary CHR BRK', sans-serif;
+font-family: 'Binary X 01s BRK', sans-serif;
+font-family: 'Binary X CHR BRK', sans-serif; */
+
+
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+
+
+
+body {
+    background-color: var(--dark);
+    /* font-family: sans-serif; */
+    margin: 0;
+    padding: 15px 20px;
+    min-height: 99%;
+    width: 100%;
+    min-width: 550px;
+    /* font-family: cursor, monospace; */
+    overflow-x: hidden;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 10px;
+
+}
+
+::selection {
+    background-color: var(--popGreen);
+    color: var(--dark);
+}
+
+::-moz-selection {
+    background-color: var(--popGreen);
+    color: var(--dark);
+}
+
+textarea {
+    outline: none;
+    resize: horizontal;
+    left: -1000px;
+    position: absolute;
+}
+
+p {
+    display: block;
+    line-height: 1.3em;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: 0.05em;
+    animation: typing 0.5s steps(30, end);
+}
+
+.no-animation {
+    animation: typing 0 steps(30, end);
+}
+
+.margin {
+    margin-left: 20px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+span {
+    color: var(--popGreen);
+
+
+
+}
+
+/* span::selection {
+    background-color: var(--popGreen);
+    color: var(--dark);
+} */
+
+.container {
+    padding: 30px;
+}
+
+/* .title {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} */
+
+
+
+
+
+
+#texter {
+    border: none;
+    background: transparent;
+    width: 50vw;
+    color: var(--popGreen);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -1.5px;
+    word-spacing: -2px;
+    /* caret-color: var(--popGreen); this thing might come in handy later if blinking cursor doesn't work properly*/
+}
+
+/* #texter::selection {
+    background-color: var(--popGreen);
+    color: var(--dark);
+} */
+
+.cursor {
+    font-size: 12px;
+    color: #73ABAD;
+    background-color: #73ABAD;
+    position: relative;
+    opacity: 1;
+    height: 1.5em;
+    width: 10px;
+    max-width: 10px;
+    user-select: none;
+    transform: translateY(4px);
+    overflow: hidden;
+    text-indent: -5px;
+    display: inline-block;
+    text-decoration: blink;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+#command {
+    cursor: text;
+    height: 50px;
+    color: var(--popGreen);
+}
+
+#liner {
+    line-height: 1.3em;
+    margin-top: -2px;
+    animation: show 0.5s ease forwards;
+    animation-delay: 1.2s;
+    opacity: 0;
+}
+
+#liner::before {
+    color: #519975;
+    content: "c:\\users\\guest>";
+}
+
+#liner.password::before {
+    content: "Password:";
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+.command2{
+    color: var(--popGreen); 
+    /* for the color of command line after pressing enter */
+}
+
+.color2{
+    color: var(--darkPink);
+}
+
+.error{
+    color: var(--cherryRed);
+}
+
+.uses{
+    color: var(--cherryRed);
+}
+
+/* .cursor {
+    text-decoration: blink;
+    animation: blinker 1s ease infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+} */
+
+/* #texter:focus {
+    background-color: var(--dark);
+}  */
