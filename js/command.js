@@ -82,7 +82,7 @@ about = [
     "Frameworks:            React, Bootstrap",
     "<br>",
     "Fun Facts about me:",
-    "I'm a develop who prefers Tea over Coffee",
+    "I'm a developer who prefers Tea over Coffee",
     "I practice typing daily, and currently have highest speed of 86 WPM.",
     "<br>"
 ];
