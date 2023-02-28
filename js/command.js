@@ -24,6 +24,7 @@ help = [
     // '<span class="command">color</span>             Change font color',
     // '<span class="command">quit</span>              Quits the terminal',
     // '<span class="command">echo</span>              Displays messages',
+    '<span class="command">Code</span>              Link to Repository',
     '<span class="command">shutdown</span>          Close the site',
     // '<span class="command">cd</span>                Displays the name of current directory or changes the current directory',
     // '<span class="command">open</span>              Type a designated url to open',
@@ -48,6 +49,7 @@ list = [ //list of all available commands with discription
     `<br>`,
     '<span class="command2">secret</span>             Find out yourself',
     '<span class="command2">sudo</span>               Only use of you\'re an admin!',
+    '<span class="command">Code</span>                Link to Repository',
     '<span class="command2">password</span>           Try for yourself',
     `<br>`,
     '<span class="command2">twitter</span>            Opens Twitter',
@@ -67,6 +69,7 @@ var twitter = "https://www.twitter.com/pandeheet/";
 var linkedin = "https://www.linkedin.com/in/heet-pande-6a4461128/";
 var instagram = "https://www.instagram.com/pandeheet/";
 var github = "https://github.com/heetjpande/";
+var code = "https://github.com/heetjpande/terminal";
 var email = 'mailto:heetjpande@gmail.com';
 
 about = [
